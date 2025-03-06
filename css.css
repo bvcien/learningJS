@@ -1,0 +1,74 @@
+h1 {
+    text-align: center;
+    font-size: 69px;
+    cursor: pointer;
+    color: rgb(57, 57, 196);
+    /* display: inline-block; */
+    text-decoration: underline;
+}
+
+h1:hover {
+    opacity: 0.7;
+}
+
+.facebook {
+    display: inline-block;
+    color: rgb(57, 57, 196);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    /* color: rgb(57, 57, 196); */
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.link:hover {
+    opacity: 0.7;
+}
+
+.ig {
+    color: rgb(57, 57, 196);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}   
+
+.ig a {
+    text-decoration: none;
+}
+
+.git {
+    display: inline-block;
+    /* background-color:black; */
+    color: rgb(57, 57, 196);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    display: inline-block;
+    /* background-color:black; */
+    color: rgb(57, 57, 196);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.sdt {
+    display: inline-block;
+    /* background-color:black; */
+    color: rgb(57, 57, 196);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
