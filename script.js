@@ -47,7 +47,7 @@ console.log(getRandomItem(item));
 // js
 function getRandNumbers(min, max, length) {
     let result = [];
-    for (let i = 1; i < length; i++) {
+    for (let i = 1; i <= length; i++) {
         let ramdom = Math.floor(Math.random() * (max - min) + min);
         result.push(ramdom);
     }
@@ -67,6 +67,14 @@ function run(object) {
 
 // Expected results:
 console.log(run({ name: 'Nguyen Van A', age: 16 }));
+
+
+let i=0;
+
+while (i < 10) {
+    i++;
+    console.log(i);
+}
 
 
 
