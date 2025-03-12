@@ -17,6 +17,7 @@ user.cmt = 'Xin chao mn';
 console.log(author.getName());
 console.log(user.getName());
 
+//in ra thoi gian hien tai
 var date = new Date();
 var year = date.getFullYear();
 var month = date.getMonth() + 1;
@@ -27,6 +28,7 @@ var second = date.getSeconds();
 
 console.log(`${day}/${month}/${year} - ${hours}:${minutes}:${second}`);
 
+//in ra ten ngau nhien
 let item = [
     "Chiến",
     'Oanh',
@@ -44,7 +46,7 @@ function getRandomItem(list) {
 }
 console.log(getRandomItem(item)); 
 
-// js
+// in ra length so ngau nhien trong khoang min max
 function getRandNumbers(min, max, length) {
     let result = [];
     for (let i = 1; i <= length; i++) {
@@ -55,6 +57,7 @@ function getRandNumbers(min, max, length) {
 }
 console.log(getRandNumbers(10, 50, 5));
 
+//in ra so ngau nhien trong khoang 100 va lam tron
 console.log(Math.floor(Math.random() * 100));
 
 function run(object) {
@@ -65,31 +68,34 @@ function run(object) {
     return arr;
 }
 
-// Expected results:
 console.log(run({ name: 'Nguyen Van A', age: 16 }));
 
-
-let i=0;
-
-while (i < 10) {
-    i++;
-    console.log(i);
+//loai bo gia tri trung nhau
+function removeDuplicates(array) {
+    return [...new Set(array)];
 }
 
+const arr = [1, 2, 2, 3, 4, 4, 5];
+console.log(removeDuplicates(arr)); // [1, 2, 3, 4, 5]
 
+//tinh luy thua, giaithua khong de quy
+function luythua(x, n) {
+    let kq=1;
+    for(let i=0; i<n; i++) {
+        kq *=x;
+    }
+    return kq;
+}
 
+console.log(luythua(3, 4))
 
+function giaithua(num) {
+    // if (num<0) return "Không có giai thừa cho số âm"
+    let kq = 1;
+    for(let i=num; i>0; i--) {
+        kq *=i;
+    }
+    return kq;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(giaithua(3))
