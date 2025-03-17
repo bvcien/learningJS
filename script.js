@@ -99,3 +99,12 @@ function giaithua(num) {
 }
 
 console.log(giaithua(3))
+
+//giaithua dung dequy
+function giaithua(num) {
+    if(num > 0) {
+        return num * giaithua(num -1);
+    }
+    return 1;
+}
+console.log(giaithua(3))
