@@ -108,3 +108,31 @@ function giaithua(num) {
     return 1;
 }
 console.log(giaithua(3))
+
+
+// array filter()
+let list = [
+    {
+        id: 1,
+        name: 'chien',
+        coin: 0
+    },
+    {
+        id: 2,
+        name: 'van',
+        coin: 100
+    },
+    {
+        id: 3,
+        name: 'bui',
+        coin: 100
+    }
+];
+
+function timkiem(list) {
+    return list.filter(list => list.coin > 0)
+}
+
+console.log(timkiem(list))
+
+
