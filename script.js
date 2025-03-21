@@ -135,4 +135,34 @@ function timkiem(list) {
 
 console.log(timkiem(list))
 
+//array map()
+let khoahoc = [
+    {
+        id: 1,
+        name: 'HTML, CSS',
+        price: 100
+    },
+    {
+        id: 2,
+        name: 'Javascript',
+        price: 100
+    },
+    {
+        id: 3,
+        name: 'Node JS',
+        price: 100
+    }
+];
 
+function khoahocHandle(khoahoc) {
+    // return {
+    //     id: `Bai so: ${khoahoc.id}`,
+    //     name: `Ky nang: ${khoahoc.name}`,
+    //     price: `Gia: ${khoahoc.price}`
+    // }
+    return khoahoc.name;
+}
+
+let newKhoaHoc = khoahoc.map(khoahocHandle);
+
+console.log(newKhoaHoc);
