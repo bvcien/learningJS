@@ -115,7 +115,7 @@ let list = [
     {
         id: 1,
         name: 'chien',
-        coin: 0
+        coin: 199
     },
     {
         id: 2,
@@ -166,3 +166,55 @@ function khoahocHandle(khoahoc) {
 let newKhoaHoc = khoahoc.map(khoahocHandle);
 
 console.log(newKhoaHoc);
+
+
+//callback Filter()
+
+Array.prototype.filter2 = function(callback) {
+    let output = [];
+    for( let index in this) {
+        if(this.hasOwnProperty(index)) {
+            let result = callback(this[index], index, this);
+            if (result) {
+                output.push(this[index]);
+            }
+        }
+    }
+    return output;
+}
+
+// Array.prototype.filter2 = function (callback) {
+//     let output = [];
+//     for (let index in this) {
+//         if (this.hasOwnProperty(index) && callback(this[index], index, this)) {
+//                 output.push(this[index]);
+//         }
+//     }
+//     return output;
+// }
+
+let quanaos = [
+    {
+        name: 'Áo phông nam',
+        price: 190
+    },
+    {
+        name: 'Quần bò',
+        price: 20
+    },
+    {
+        name: 'Quần lót',
+        price: 3
+    }
+];
+
+let filterQuanaos = quanaos.filter2(function(quanao, index, array) {
+    return quanao.price > 20
+})
+
+console.log(filterQuanaos)
+
+
+
+
+
